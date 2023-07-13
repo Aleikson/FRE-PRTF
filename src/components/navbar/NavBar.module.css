@@ -1,0 +1,145 @@
+.container {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  grid-template-columns: auto auto;
+}
+
+.nameLink {
+  justify-self: start;
+  gap: 0.25rem;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nameLink h1 {
+  font-size: 1.25rem;
+  font-family: -apple-system-headline, sans-serif;
+  margin: 0;
+  line-height: 1.75rem;
+}
+
+.nameLink span {
+  font-weight: 400;
+  font-size: .75rem;
+  font-variant-caps: all-small-caps;
+  letter-spacing: .05em;
+}
+
+.links {
+  display: flex;
+  justify-self: end;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links a {
+  margin-left: 30px;
+  text-decoration: none;
+  font-family: -apple-system-body, sans-serif;
+  font-variant-caps: all-small-caps;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: .05em;
+  line-height: 27px;
+  color: #000000;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.iconBar {
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+  margin-bottom: 4px;
+  border-radius: 10px;
+}
+
+.iconBar:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .links {
+    display: none;
+    transform: translateX(-100%);
+  }
+
+  .container {
+    justify-content: space-between;
+    width: 80%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .links.open {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 75%;
+    height: 175px;
+    padding: 10px;
+    background: white;
+    align-items: flex-start;
+    gap: 20px;
+    animation: slideIn 0.2s ease-in-out 0.2s forwards;
+  }
+
+  .links.open a {
+    margin: 0;
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000000;
+  }
+
+  .nameLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: start;
+    gap: 0.25rem;
+    margin: 0;
+  }
+
+  .menuIcon {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    left: 80%;
+    cursor: pointer;
+  }
+
+}
