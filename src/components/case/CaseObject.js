@@ -38,7 +38,7 @@ const CaseObject = () => {
             description={project.description}
             list={project.list}
             image={project.image}
-            page={project.page}
+            reverse={index % 2 !== 0}
           />
         </div>
       ))}
