@@ -18,7 +18,8 @@
   align-items: center;
   display: flex;
   text-decoration: none;
-  color: #000000;
+  --tw-text-opacity: 1;
+  color: rgba(0, 98, 255, var(--tw-text-opacity));
 }
 
 .nameLink h1 {

@@ -6,12 +6,12 @@ const Home = () => {
   return (
     <div className={Style.home}>
       <div className={Style.content}>
-        <div className={Style.role}>
+        <div className={Style.title}>
           <h1>I’m a Front-End Web Developer</h1>
         </div>
         <div className={Style.description}>
-          <p><span style={{fontWeight: 'bold'}}>Experienced</span> in turning ideas into reality,</p>
-          <p><span style={{fontWeight: 'bold'}}>bringing your vision to the digital world.</span></p>
+          <p>Experienced in creating responsive and intuitive websites, with a focus on usability and accessibility.</p>
+          <p>Helping people turn their ideas into successful digital projects.</p>
         </div>
       </div>
       <CaseObject />
