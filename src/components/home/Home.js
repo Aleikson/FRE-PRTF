@@ -1,6 +1,6 @@
 import React from 'react';
 import Style from './Home.module.css';
-import CaseObject from '../case/CaseObject';
+import Skills from '../skills/Skills'
 
 const Home = () => {
   return (
@@ -13,8 +13,12 @@ const Home = () => {
           <p>Experienced in creating responsive and intuitive websites, with a focus on usability and accessibility.</p>
           <p>Helping people turn their ideas into successful digital projects.</p>
         </div>
+        <div className={Style.btnContainer}>
+          <a href='/' className={Style.btn1}>View my work</a>
+          <a href='/' className={Style.btn2}>more about me</a>
+          </div>
       </div>
-      <CaseObject />
+      <Skills />
     </div >
   );
 };

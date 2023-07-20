@@ -3,7 +3,7 @@
 }
 
 .content {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   margin-top: 2.5rem;
   width: 70%;
   margin-right: auto;
@@ -12,7 +12,7 @@
   padding-left: 2rem;
 }
 
-.description{
+.description {
   --tw-text-opacity: 1;
   color: rgba(91, 110, 128, var(--tw-text-opacity));
   font-family: -apple-system-body, sans-serif;
@@ -32,6 +32,47 @@
 
 .title h1 {
   margin: 0;
+}
+
+.btnContainer {
+  display: flex;
+  align-content: center;
+}
+
+.btn1 {
+  padding-top: 0.7rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  background-image: linear-gradient(90deg, #009bff, #0062ff);
+  box-shadow: 0 2px 8px 0 rgba(0, 34, 255, .08), 0 2px 8px 0 rgba(0, 11, 80, .12);
+  z-index: 1;
+  border-radius: 9999px;
+  position: relative;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: inherit
+}
+
+.btn2 {
+  padding-top: 0.7rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 9999px;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgba(0, 98, 255, var(--tw-text-opacity));
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: inherit;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
