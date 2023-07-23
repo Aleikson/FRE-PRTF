@@ -1,15 +1,17 @@
 .container {
-  width: 70%;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 2rem;
   padding-left: 2rem;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: grid;
   place-items: center;
   gap: 1rem;
   grid-template-columns: auto auto;
+
+
 }
 
 .nameLink {
@@ -23,17 +25,14 @@
 }
 
 .nameLink h1 {
+  font-weight: 900;
   font-size: 1.25rem;
-  font-family: -apple-system-headline, sans-serif;
-  margin: 0;
   line-height: 1.75rem;
 }
 
 .nameLink span {
-  font-weight: 400;
-  font-size: .85rem;
-  font-variant-caps: all-small-caps;
-  letter-spacing: .05em;
+  font-size: .8rem;
+  line-height: 1.75rem;
 }
 
 .links {
@@ -44,15 +43,13 @@
 }
 
 .links a {
-  margin-left: 30px;
-  text-decoration: none;
-  font-family: -apple-system-body, sans-serif;
-  font-variant-caps: all-small-caps;
-  font-weight: 500;
-  font-size: 1rem;
-  letter-spacing: .05em;
-  line-height: 27px;
-  color: #000000;
+  --tw-text-opacity: 1;
+  color: rgba(91, 110, 128, var(--tw-text-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-decoration: inherit;
+  font-size: 1.25rem;
+  letter-spacing: 0.025em;
 }
 
 .menuIcon {
