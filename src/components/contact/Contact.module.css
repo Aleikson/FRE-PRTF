@@ -6,6 +6,10 @@
   flex-direction: column;
   --tw-border-opacity: 1;
   border: solid 1px rgba(229, 231, 235, var(--tw-border-opacity));
+  margin-right: 150px;
+  margin-left: 150px;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .container p {
@@ -15,11 +19,6 @@
   line-height: 1.75rem;
   max-width: 48rem;
   text-align: center;
-}
-
-.title {
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .containerGrid {
@@ -62,7 +61,7 @@
 
 }
 
-.iconContainer {
+.linksContainer {
   display: flex;
   flex-direction: column;
   text-align: right;
@@ -71,7 +70,7 @@
   padding-bottom: 1rem;
 }
 
-.iconContainer a {
+.linksContainer a {
   --tw-text-opacity: 1;
   color: rgba(91, 110, 128, var(--tw-text-opacity));
   font-size: 1.5rem;
@@ -79,26 +78,6 @@
   text-decoration: inherit;
 }
 
-.technologyContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-.technologyItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.icon {
-  width: 100%;
-  height: 100%;
-}
 
 .btn1 {
   padding-top: 0.7rem;
@@ -124,47 +103,44 @@
 @media only screen and (max-width: 480px) {
   .container {
     height: auto;
+    padding: 0;
+    margin: 0;
   }
 
   .containerGrid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 8px;
+    display: flex;
+    flex-direction: column;
   }
 
   .title {
     font-size: 18px;
   }
 
-  .iconContainer {
-    width: 70px;
-    height: 70px;
+  .linksContainer {
+    width: 100%;
   }
 
-  .name {
-    font-size: 10px;
+  .linksContainer a {
+    text-align: center;
+    font-size: 1.125rem;
   }
 
-  .icon {
-    width: 30px;
-    height: 30px;
+  .item {
+    padding-right: 0;
+    align-items: center;
+    ;
   }
 
-  .technologyContainer {
-    padding: 0px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1%;
+  .item h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    ;
   }
 
-  .technologyItem {
-    margin-right: 0;
+  .item p {
+    font-size: 1.125rem;
   }
 
-  .load {
-    width: 60px;
-    height: 60px;
-    position: relative;
-  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -172,28 +148,9 @@
     height: auto;
   }
 
-  .containerGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .iconContainer {
+  .linksContainer {
     width: 100px;
     height: 100px;
-  }
-
-  .name {
-    font-size: 12px;
-  }
-
-  .load {
-    width: 70px;
-    height: 70px;
-    position: relative;
-    top: 0;
-  }
-
-  .technologyContainer {
-    gap: 10px;
   }
 }
 
@@ -203,25 +160,11 @@
     height: auto;
   }
 
-  .containerGrid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .iconContainer {
+  .linksContainer {
     width: 130px;
     height: 130px;
   }
 
-  .name {
-    font-size: 14px;
-  }
-
-  .load {
-    width: 90px;
-    height: 90px;
-    position: relative;
-    top: 0;
-  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -230,46 +173,18 @@
     height: auto;
   }
 
-  .containerGrid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .iconContainer {
+  .linksContainer {
     width: 150px;
     height: 150px;
   }
 
-  .name {
-    font-size: 16px;
-  }
-
-  .load {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    top: 0;
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
 
-  .containerGrid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .iconContainer {
+  .linksContainer {
     width: 150px;
     height: 150px;
   }
 
-  .name {
-    font-size: 16px;
-  }
-
-  .load {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    top: 0;
-  }
 }

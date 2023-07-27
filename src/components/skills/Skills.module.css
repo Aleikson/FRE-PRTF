@@ -1,5 +1,4 @@
 .container {
-  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -81,7 +80,7 @@
   }
 
   .containerGrid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 8px;
   }
 
@@ -127,7 +126,7 @@
   }
 
   .containerGrid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .iconContainer {

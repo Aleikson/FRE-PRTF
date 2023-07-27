@@ -11,9 +11,9 @@ const Contact = () => {
           <p> I’m currently available for work.</p>
           <a href='/' className={Style.btn1}>Send a message</a>
         </div>
-        <div className={Style.iconContainer}>
-          <a href='/' > +316 57 041 097</a>
-          <a href='/' >hi@rubenkuipers.design</a>
+        <div className={Style.linksContainer}>
+          <a href='/' >+55 (99) 98455-7469</a>
+          <a href='/' >aleiksonsilva@hotmail.com</a>
         </div>
       </div>
     </div>

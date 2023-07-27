@@ -10,8 +10,6 @@
   place-items: center;
   gap: 1rem;
   grid-template-columns: auto auto;
-
-
 }
 
 .nameLink {

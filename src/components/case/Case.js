@@ -16,7 +16,7 @@ const Case = ({ title, description, list, image, reverse }) => {
         <div className={Style.imgContainer}>
           <img className={Style.imgProject} src={image} alt="" />
           <div className={Style.content}>
-            <div className={Style.leftContent}>
+            <div className={Style.itemContent}>
               <h3 className={Style.title}>{title}</h3>
               <ul className={Style.list}>
                 {list.map((item, index) => (

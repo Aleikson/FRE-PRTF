@@ -1,5 +1,9 @@
 .home {
+  display: flex;
   height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
@@ -10,14 +14,6 @@
   margin-left: auto;
   padding-right: 2rem;
   padding-left: 2rem;
-}
-
-.description {
-  --tw-text-opacity: 1;
-  color: rgba(91, 110, 128, var(--tw-text-opacity));
-  font-family: -apple-system-body, sans-serif;
-  margin: 0;
-  font-size: 1.3rem;
 }
 
 .title {
@@ -32,6 +28,14 @@
 
 .title h1 {
   margin: 0;
+}
+
+.description {
+  --tw-text-opacity: 1;
+  color: rgba(91, 110, 128, var(--tw-text-opacity));
+  font-family: -apple-system-body, sans-serif;
+  margin: 0;
+  font-size: 1.3rem;
 }
 
 .btnContainer {
@@ -78,7 +82,7 @@
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
   .home h1 {
-    font-size: 55px;
+    font-size: 2.5rem;
     line-height: 45px;
     letter-spacing: 0px;
   }
@@ -97,16 +101,13 @@
 
   .description p {
     text-align: center;
-    font-size: 10px;
+    font-size: 1.125rem;
   }
 
   .title {
     justify-content: center;
   }
 
-  .title h2 {
-    font-size: 15px;
-  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 766px) {
