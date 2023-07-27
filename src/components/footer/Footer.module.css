@@ -1,0 +1,53 @@
+.footerContainer {
+  padding: 20px;
+  text-align: center;
+}
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.content a {
+  text-decoration: none;
+  display: flex;
+}
+
+.contactIcon {
+  margin-right: 10px;
+  font-size: 25px;
+  --tw-text-opacity: 1;
+  color: rgba(0, 8, 61, var(--tw-text-opacity));
+}
+
+.contactText {
+  font-size: 15px;
+}
+
+.footerText {
+  margin-top: 35px;
+  font-size: 15px;
+  --tw-text-opacity: 1;
+  color: rgba(91, 110, 128, var(--tw-text-opacity));
+}
+
+@media (max-width: 635px) {
+  .footerContainer {
+    padding: 10px;
+  }
+
+  .contactText {
+    margin-top: 5px;
+  }
+
+  .footerText {
+    font-size: 1rem;
+  }
+}
