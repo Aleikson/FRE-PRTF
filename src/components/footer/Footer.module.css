@@ -1,6 +1,8 @@
 .footerContainer {
   padding: 20px;
   text-align: center;
+  --tw-border-opacity: 1;
+  border: solid 1px rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
 .contactContainer {
@@ -25,6 +27,11 @@
   font-size: 25px;
   --tw-text-opacity: 1;
   color: rgba(0, 8, 61, var(--tw-text-opacity));
+}
+
+.contactIcon:hover{
+  --tw-text-opacity: 1;
+  color: rgba(0, 98, 255, var(--tw-text-opacity));
 }
 
 .contactText {

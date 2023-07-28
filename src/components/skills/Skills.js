@@ -37,7 +37,7 @@ const Skills = () => {
         })}
       </div>
       <p>
-        I create <span style={{ '--tw-text-opacity': 1, color: 'rgba(0, 98, 255, var(--tw-text-opacity))' }}>effective</span> and <span style={{ '--tw-text-opacity': 1, color: 'rgba(0, 98, 255, var(--tw-text-opacity))' }}>high-performing</span> Landing Pages, using <span style={{ '--tw-text-opacity': 1, color: 'rgba(0, 98, 255, var(--tw-text-opacity))' }}>modern technologies</span> to <span style={{ '--tw-text-opacity': 1, color: 'rgba(0, 98, 255, var(--tw-text-opacity))' }}>engage</span> and <span style={{ '--tw-text-opacity': 1, color: 'rgba(0, 98, 255, var(--tw-text-opacity))' }}>convert</span> the target audience.
+        I create <span style={{ '--tw-text-opacity': 1, color: 'rgba(0, 98, 255, var(--tw-text-opacity))' }}>effective</span> and <span style={{ '--tw-text-opacity': 1, color: 'rgba(0, 98, 255, var(--tw-text-opacity))' }}>high-performing</span> Pages, using <span style={{ '--tw-text-opacity': 1, color: 'rgba(0, 98, 255, var(--tw-text-opacity))' }}>modern technologies</span> to <span style={{ '--tw-text-opacity': 1, color: 'rgba(0, 98, 255, var(--tw-text-opacity))' }}>engage</span> and <span style={{ '--tw-text-opacity': 1, color: 'rgba(0, 98, 255, var(--tw-text-opacity))' }}>convert</span> the target audience.
       </p>
     </div>
   );

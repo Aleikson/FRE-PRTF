@@ -17,7 +17,7 @@ const NavBar = () => {
       <div className={`${style.links} ${isMenuOpen ? style.open : style.closed}`}>
         <a href="#about">About</a>
         <a href="#case">Case Studies</a>
-        <a href="#contact">Contact</a>
+        <a style={{ '--tw-text-opacity': 1, color: 'rgba(0, 98, 255, var(--tw-text-opacity))' }} href="#contact">Contact</a>
       </div>
       <div className={style.menuIcon} onClick={toggleMenu}>
         <span className={`${style.iconBar} ${isMenuOpen ? style.open : ''}`} />

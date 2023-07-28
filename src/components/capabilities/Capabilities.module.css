@@ -1,10 +1,13 @@
 .container {
-  height: 75vh;
-  margin-top: 15%;
+  height: 70vh;
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
   align-items: center;
+  --tw-border-opacity: 1;
+  border: solid 1px rgba(229, 231, 235, var(--tw-border-opacity));
+  justify-content: center;
+  margin-top: 5%;
 }
 
 .title {
@@ -81,12 +84,18 @@
 @media only screen and (max-width: 480px) {
   .container {
     height: auto;
+    margin-top: 50%;
   }
 
   .containerGrid {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+
   }
 
   .iconContainer {
@@ -115,7 +124,8 @@
   }
 
   .containerGrid {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
   }
 
   .iconContainer {
@@ -131,12 +141,9 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-  .container {
-    height: auto;
-  }
-
   .containerGrid {
-    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    width: 90%;
   }
 
   .iconContainer {
@@ -156,10 +163,6 @@
     height: auto;
   }
 
-  .containerGrid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
   .iconContainer {
     width: 150px;
     height: 150px;
@@ -172,10 +175,6 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
-
-  .containerGrid {
-    grid-template-columns: repeat(4, 1fr);
-  }
 
   .iconContainer {
     width: 150px;

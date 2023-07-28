@@ -4,6 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  --tw-border-opacity: 1;
+  border: solid 1px rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
 .content {
@@ -52,7 +54,7 @@
   line-height: 1.75rem;
   background-image: linear-gradient(90deg, #009bff, #0062ff);
   box-shadow: 0 2px 8px 0 rgba(0, 34, 255, .08), 0 2px 8px 0 rgba(0, 11, 80, .12);
-  z-index: 1;
+
   border-radius: 9999px;
   position: relative;
   letter-spacing: 0.025em;
@@ -79,7 +81,19 @@
   text-decoration: inherit;
 }
 
+@media only screen and (max-width: 320px) {
+
+  .home{
+    height: auto;
+  }
+
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+  .home{
+    height: auto;
+  }
 
   .home h1 {
     font-size: 2.5rem;
@@ -111,6 +125,12 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 766px) {
+
+
+  .home{
+    height: auto;
+    width: 90%;
+  }
 
   .content {
     width: 90%;
