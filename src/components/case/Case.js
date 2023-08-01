@@ -9,7 +9,7 @@ const Case = ({ title, description, list, image, reverse }) => {
       {reverse ? null : (
         <>
           <h1 className={Style.firstTitle}>Case Studies</h1>
-          <p className={Style.firstDescription}>Prototypes, Digital Products (Apps, Websites, SaaS solutions) and design systems which are visually pleasing, user-centric and easy to use.</p>
+          <p className={Style.firstDescription}>Creating visually pleasing, user-centric, and intuitive prototypes, digital products (such as apps and websites), and design systems.</p>
         </>
       )}
       <div className={imgContentClass}>

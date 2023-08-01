@@ -6,7 +6,7 @@ import { IoLogoJavascript } from 'react-icons/io';
 import { TbBrandTypescript, TbBrandBootstrap } from 'react-icons/tb';
 import { MdOutlineHtml, MdOutlineCss } from 'react-icons/md';
 import { BiGitBranch } from 'react-icons/bi';
-import { SiFirebase, SiStyledcomponents } from 'react-icons/si';
+import { SiFirebase, SiStyledcomponents, SiFigma } from 'react-icons/si';
 
 const Skills = () => {
   const icons = [
@@ -18,6 +18,7 @@ const Skills = () => {
     { icon: TbBrandTypescript, name: 'TypeScript' },
     { icon: TbBrandBootstrap, name: 'Bootstrap' },
     { icon: SiFirebase, name: 'Firebase' },
+    { icon: SiFigma, name: 'Figma' },
     { icon: DiJqueryLogo, name: 'jQuery' },
     { icon: SiStyledcomponents, name: 'Styled Components' },
   ];
