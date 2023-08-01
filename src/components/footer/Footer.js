@@ -26,7 +26,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <p className={Style.footerText}>&copy; {currentYear} {authorName} - Todos os direitos reservados</p>
+      <p className={Style.footerText}>&copy; {currentYear} {authorName} - All rights reserved</p>
     </div>
   );
 };
