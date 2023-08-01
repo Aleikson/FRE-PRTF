@@ -108,7 +108,7 @@
 @media only screen and (max-width: 320px) {
 
     .reverse .imgContainer {
-        padding-top: 60px;
+        padding-top: 250px;
     }
 
     .imgProject {
@@ -139,7 +139,7 @@
     }
 
     .reverse .imgContainer {
-        padding-top: 230px;
+        padding-top: 60px;
     }
 
     .containerItem {
