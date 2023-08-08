@@ -1,75 +1,72 @@
 .container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.sideBySide {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 30%;
 }
 
 .firstTitle {
     font-size: 2.25rem;
     line-height: 2.5rem;
-    --tw-text-opacity: 1;
-    color: rgba(0, 8, 61, var(--tw-text-opacity));
+    color: rgba(0, 8, 61, 1);
 }
 
 .firstDescription {
     font-size: 1.5rem;
     line-height: 2rem;
-    --tw-text-opacity: 1;
-    color: rgba(91, 110, 128, var(--tw-text-opacity));
+    color: rgba(91, 110, 128, 1);
     width: 70%;
+    max-width: 70%;
     text-align: center;
-    margin-bottom: 60px;
-}
-
-.reverse .firstTitle,
-.reverse .firstDescription {
-    display: none;
+    margin: 0 auto;
 }
 
 .imgContent {
-    width: 70%;
-}
-
-.imgContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
 }
 
-.reverse .imgContainer {
-    flex-direction: row-reverse;
+.imgContainer {
+    margin: 10px;
 }
 
 .imgProject {
-    width: 45%;
+    width: 100%;
     border-radius: 20px;
-    --tw-bg-opacity: 1;
-    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .05), 0 16px 34px 0 rgba(0, 0, 0, .1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.reverse .imgProject {
-    margin-left: 0;
-    margin-right: 0;
+.imgProject:hover {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05), 0 8px 17px 0 rgba(0, 0, 0, .1);
 }
 
 .content {
     display: flex;
     margin-left: 10%;
     margin-bottom: 5%;
-}
-
-.reverse .content {
-    margin-right: 10%;
-    margin-left: 0;
+    width: 50%;
 }
 
 .itemContent {
     display: flex;
     flex-direction: column;
     align-items: center;
-    --tw-text-opacity: 1;
-    color: rgba(91, 110, 128, var(--tw-text-opacity));
+    color: rgba(91, 110, 128, 1);
     font-family: -apple-system-body, sans-serif;
     margin: 0;
     font-size: 1rem;
@@ -77,8 +74,7 @@
     text-align: justify;
     height: 50%;
     padding: 20px;
-    --tw-bg-opacity: 1;
-    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .05), 0 16px 34px 0 rgba(0, 0, 0, .1);
     border-radius: 20px;
 }
@@ -88,8 +84,7 @@
     line-height: 2.5rem;
     font-family: monospace;
     margin: 0;
-    --tw-text-opacity: 1;
-    color: rgba(0, 8, 61, var(--tw-text-opacity));
+    color: rgba(0, 8, 61, 1);
 }
 
 .list {
@@ -105,32 +100,68 @@
     letter-spacing: .05em;
 }
 
+.containerDesign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.containerDesign img {
+    width: 40%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .05), 0 16px 34px 0 rgba(0, 0, 0, .1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.containerDesign img:hover {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .05), 0 8px 17px 0 rgba(0, 0, 0, .1);
+}
+
 @media only screen and (max-width: 320px) {
 
+    .column {
+        width: 100%;
+    }
+
+    .sideBySide {
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .reverse .imgContainer {
         padding-top: 250px;
     }
 
     .imgProject {
-        width: 70%;
+        width: 100%;
     }
 
     .content,
     .reverse .content {
         display: none;
     }
-  
-  }
-
+}
 
 @media only screen and (min-width: 321px) and (max-width: 767px) {
+
+    .column {
+        width: 75%;
+    }
+
+    .sideBySide {
+        flex-direction: column;
+        align-items: center;
+    }
 
     .container {
         margin-top: 0;
     }
 
     .imgProject {
-        width: 90%;
+        width: 100%;
     }
 
     .content,
@@ -154,13 +185,25 @@
     .firstDescription {
         font-size: 1.125rem;
     }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 926px) {
 
-    .imgContainer{
+    .column {
+        width: 100%;
+    }
+
+    .sideBySide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgContainer {
         margin-bottom: 35px;
+    }
+    
+    .imgProject {
+        width: 100%;
     }
 
     .container {
@@ -180,5 +223,4 @@
         text-align: center;
         position: static;
     }
-
 }

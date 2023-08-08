@@ -102,6 +102,11 @@
   text-decoration: inherit
 }
 
+.btn1:hover {
+  background-image: linear-gradient(90deg, #0062ff, #009bff);
+  color: rgba(255, 255, 255, 1);
+}
+
 .availabilityContainer {
   display: flex;
   align-items: center;

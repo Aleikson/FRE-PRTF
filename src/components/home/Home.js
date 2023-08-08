@@ -4,10 +4,10 @@ import Skills from '../skills/Skills'
 
 const Home = () => {
   return (
-    <div className={Style.home}>
+    <div id='home' className={Style.home}>
       <div className={Style.content}>
         <div className={Style.title}>
-          <h1>I’m a Front-End Web Developer</h1>
+          <h1>I’m a Front-End Web Developer & UI designer</h1>
         </div>
         <div className={Style.description}>
           <p>Experienced in creating responsive and intuitive websites, with a focus on usability and accessibility.</p>
