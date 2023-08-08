@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaGithub } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { BsLinkedin } from 'react-icons/bs';
 import Style from './Footer.module.css';
 
@@ -7,23 +7,51 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   const authorName = 'Aleikson';
 
+  const handleSmoothScroll = (event, targetId) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      // Calculate the offset of the target element from the top of the document
+      const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+      // Scroll to the target element smoothly
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <div className={Style.footerContainer}>
-      <div className={Style.contactContainer}>
-        <div className={Style.content}>
-          <a href="mailto:aleiksonsilva@hotmail.com">
-            <FaEnvelope className={Style.contactIcon} />
+      <div className={Style.socialAndNavigationContainer}>
+        <nav className={Style.navigationLinks}>
+          <span className={Style.navigationTitle}>Navigation</span>
+          <a href="/" onClick={(e) => handleSmoothScroll(e, 'home')}>
+            Home
           </a>
-        </div>
-        <div className={Style.content}>
-          <a href="https://www.linkedin.com/in/aleikson-frontend/">
-            <BsLinkedin className={Style.contactIcon} />
+          <a href="#case" onClick={(e) => handleSmoothScroll(e, 'case')}>
+            Case
           </a>
-        </div>
-        <div className={Style.content}>
-          <a href="https://github.com/Aleikson">
-            <FaGithub className={Style.contactIcon} />
+          <a href="#capabilities" onClick={(e) => handleSmoothScroll(e, 'capabilities')}>
+            Capabilities
           </a>
+          <a href="#contact" onClick={(e) => handleSmoothScroll(e, 'contact')}>
+            Contact
+          </a>
+        </nav>
+        <div className={Style.contactContainer}>
+          <div className={Style.socialLinks}>
+            <a href="https://github.com/Aleikson">
+              <FaGithub className={Style.contactIcon} />
+              <span className={Style.contactText}>github.com/Aleikson</span>
+            </a>
+            <a href="https://www.linkedin.com/in/aleikson-frontend/">
+              <BsLinkedin className={Style.contactIcon} />
+              <span className={Style.contactText}>linkedin.com/in/aleikson</span>
+            </a>
+          </div>
         </div>
       </div>
       <p className={Style.footerText}>&copy; {currentYear} {authorName} - All rights reserved</p>

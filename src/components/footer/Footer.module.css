@@ -1,60 +1,112 @@
 .footerContainer {
-  padding: 20px;
-  text-align: center;
-  --tw-border-opacity: 1;
-  border: solid 1px rgba(229, 231, 235, var(--tw-border-opacity));
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contactContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.contactTitle {
+  font-size: 16px;
   margin-bottom: 10px;
-  justify-content: space-evenly;
 }
 
-.content {
-  display: flex;
-  align-items: center;
+.contactText {
+  font-size: 20px;
+  margin-left: 5px;
 }
 
-.content a {
-  text-decoration: none;
-  display: flex;
-}
-
-.contactIcon {
-  margin-right: 10px;
-  font-size: 25px;
-  --tw-text-opacity: 1;
-  color: rgba(0, 8, 61, var(--tw-text-opacity));
-}
-
-.contactIcon:hover{
+.contactText:hover {
   --tw-text-opacity: 1;
   color: rgba(0, 98, 255, var(--tw-text-opacity));
 }
 
-.contactText {
-  font-size: 15px;
+.socialAndNavigationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 20px;
 }
 
-.footerText {
-  margin-top: 35px;
-  font-size: 15px;
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.socialTitle {
+  font-size: 20px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.socialLinks a {
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 5px;
   --tw-text-opacity: 1;
   color: rgba(91, 110, 128, var(--tw-text-opacity));
 }
 
+.navigationLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.navigationTitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+  --tw-text-opacity: 1;
+  color: rgba(91, 110, 128, var(--tw-text-opacity));
+}
+
+.navigationLinks a {
+  text-decoration: none;
+  --tw-text-opacity: 1;
+  color: rgba(0, 98, 255, var(--tw-text-opacity));
+  margin-bottom: 5px;
+  font-size: 20px;
+  opacity: 0.8;
+  transition: color 0.3s ease;
+}
+
+.navigationLinks a:hover {
+  color: #42a5f5;
+}
+
+.footerText {
+  margin-top: 20px;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
 @media (max-width: 635px) {
+
   .footerContainer {
-    padding: 10px;
+    padding: 20px;
   }
 
-  .contactText {
-    margin-top: 5px;
+  .socialAndNavigationContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .socialLinks,
+  .navigationLinks {
+    align-items: center;
+    text-align: center;
   }
 
   .footerText {
-    font-size: 1rem;
+    font-size: 10px;
   }
 }
