@@ -1,6 +1,6 @@
 import React from 'react';
 import Style from './Skills.module.css';
-import { FaReact } from 'react-icons/fa';
+import { FaReact, FaWordpressSimple } from 'react-icons/fa';
 import { DiJqueryLogo } from 'react-icons/di';
 import { IoLogoJavascript } from 'react-icons/io';
 import { TbBrandTypescript, TbBrandBootstrap } from 'react-icons/tb';
@@ -12,12 +12,13 @@ const Skills = () => {
   const icons = [
     { icon: MdOutlineHtml, name: 'HTML' },
     { icon: MdOutlineCss, name: 'CSS' },
-    { icon: IoLogoJavascript, name: 'JavaScript'},
+    { icon: IoLogoJavascript, name: 'JavaScript' },
     { icon: BiGitBranch, name: 'Git' },
     { icon: FaReact, name: 'React' },
     { icon: TbBrandTypescript, name: 'TypeScript' },
     { icon: TbBrandBootstrap, name: 'Bootstrap' },
     { icon: SiFirebase, name: 'Firebase' },
+    { icon: FaWordpressSimple, name: 'Wordpress' },
     { icon: SiFigma, name: 'Figma' },
     { icon: DiJqueryLogo, name: 'jQuery' },
     { icon: SiStyledcomponents, name: 'Styled Components' },
@@ -42,7 +43,7 @@ const Skills = () => {
       </p>
     </div>
   );
-  
+
 };
 
 export default Skills;

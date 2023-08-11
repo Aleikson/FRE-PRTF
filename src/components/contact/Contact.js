@@ -16,7 +16,6 @@ const Contact = () => {
     <div id='contact' className={Style.container}>
       <div className={Style.containerFlex}>
         <div className={Style.item}>
-
           <h3>In need of a front-end developer?</h3>
           <div className={Style.availabilityContainer}>
             <div className={Style.blinkingCircle} style={{ opacity: isBlinking ? 1 : 0 }}></div>
