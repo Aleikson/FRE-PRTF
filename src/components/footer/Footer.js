@@ -12,10 +12,8 @@ const Footer = () => {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      // Calculate the offset of the target element from the top of the document
       const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
 
-      // Scroll to the target element smoothly
       window.scrollTo({
         top: offsetTop,
         behavior: 'smooth',

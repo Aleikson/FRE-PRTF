@@ -57,7 +57,7 @@ const Tile = ({ data }) => {
   };
 
   const content = (
-    <div className={Style.content} onClick={handleClick}>
+    <div id='case' className={Style.content} onClick={handleClick}>
       {open && data.additionalImage ? (
         <img src={data.additionalImage} alt={`Full Project`} />
       ) : (

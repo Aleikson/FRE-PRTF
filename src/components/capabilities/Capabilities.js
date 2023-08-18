@@ -8,18 +8,18 @@ const Capabilities = () => {
   const icons = [
     {
       icon: DesignSvg,
-      name: 'Product Design',
+      name: 'UI Designer',
       description: ['User Interface Design', 'Visual Design', 'Visual Identities', 'Responsive & Mobile Websites']
     },
     {
       icon: PerformanceSvg,
-      name: 'Performance',
-      description: [' JavaScript lazy loading', 'Code splitting', ' Conditional loading', ' Responsive image optimization']
+      name: 'Performance & Optimization',
+      description: ['Performance', 'JavaScript Lazy Loading', ' Code Splitting', ' Conditional Loading', 'Responsive Image Optimization']
     },
     {
       icon: DeveloperSvg,
-      name: 'Development',
-      description: ['Front-end development', 'Responsive & Mobile Websites', 'CSS Animations', 'React Development']
+      name: 'Development & WordPress:',
+      description: ['Front-end development', 'Responsive & Mobile Websites', 'React Development', 'WordPress Development', 'Custom WordPress Themes', 'SEO Optimization']
     },
   ];
 
