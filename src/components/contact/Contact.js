@@ -21,7 +21,7 @@ const Contact = () => {
             <div className={Style.blinkingCircle} style={{ opacity: isBlinking ? 1 : 0 }}></div>
             <p>I’m currently available for work.</p>
           </div>
-          <a href='/' className={Style.btn1}>Send a message</a>
+          <a href='/' className='primary-btn-global'>Send a message</a>
         </div>
         <div className={Style.linksContainer}>
           <a className={Style.contactItem} href="https://wa.me/5599984557469">
