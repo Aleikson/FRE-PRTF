@@ -1,13 +1,11 @@
 .container {
-  width: 70%;
+  width: 65%;
   margin-right: auto;
   margin-left: auto;
-
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   display: grid;
   place-items: center;
-  gap: 1rem;
   grid-template-columns: auto auto;
 }
 
@@ -17,8 +15,7 @@
   align-items: center;
   display: flex;
   text-decoration: none;
-  --tw-text-opacity: 1;
-  color: rgba(0, 98, 255, var(--tw-text-opacity));
+  color: var(--custom-background-color);
 }
 
 .nameLink h1 {
@@ -40,8 +37,7 @@
 }
 
 .links a {
-  --tw-text-opacity: 1;
-  color: rgba(91, 110, 128, var(--tw-text-opacity));
+  color: var(--secondary-color-text);
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   text-decoration: inherit;
@@ -50,8 +46,7 @@
 }
 
 .links a:hover {
-  --tw-text-opacity: 1;
-  color: rgba(0, 98, 255, var(--tw-text-opacity));
+  color: var(--custom-background-color);
 }
 
 .menuIcon {

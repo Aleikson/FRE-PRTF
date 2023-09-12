@@ -1,39 +1,36 @@
-.container{
+.container {
   height: 75vh;
+  width: 65%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .firstTitle {
   font-size: 2.25rem;
   line-height: 2.5rem;
-  color: rgba(0, 8, 61, 1);
+  color: var(--primary-color-text);
 }
 
 .firstDescription {
   font-size: 1.5rem;
   line-height: 2rem;
-  color: rgba(91, 110, 128, 1);
-  width: 60%;
+  color: var(--secondary-color-text);
   max-width: 70%;
   text-align: center;
   margin: 0 auto;
 }
 
 .tiles {
-  margin-top: 50px;
-  padding: 2vh 2vw;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   justify-content: center;
-  position: relative;
 }
 
 .tile {
   margin: 15px;
   cursor: pointer;
   overflow: hidden;
-  width: 25vw;
-  height: 25vw;
+  width: 20vw;
+  height: 20vw;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -44,4 +41,22 @@
 
 .tile img:hover {
   transform: scale(1.1);
+}
+
+@media only screen and (min-width: 320px) {
+
+  .container {
+    height: auto;
+  }
+
+  .tile{
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .tiles{
+    flex-direction: column;
+    align-items: center;
+  }
+
 }

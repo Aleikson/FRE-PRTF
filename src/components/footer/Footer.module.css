@@ -1,6 +1,9 @@
 .footerContainer {
   padding: 30px;
   display: flex;
+  width: 65%;
+  margin-right: auto;
+  margin-left: auto;
   flex-direction: column;
   align-items: center;
 }
@@ -23,15 +26,14 @@
 }
 
 .contactText:hover {
-  --tw-text-opacity: 1;
-  color: rgba(0, 98, 255, var(--tw-text-opacity));
+  color: var(--custom-background-color);
 }
 
 .socialAndNavigationContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 75%;
   margin-bottom: 20px;
 }
 
@@ -51,8 +53,7 @@
   font-size: 20px;
   text-decoration: none;
   margin-bottom: 5px;
-  --tw-text-opacity: 1;
-  color: rgba(91, 110, 128, var(--tw-text-opacity));
+   color: rgba(91, 110, 128, 1);
 }
 
 .navigationLinks {
@@ -65,14 +66,13 @@
 .navigationTitle {
   font-size: 20px;
   margin-bottom: 10px;
-  --tw-text-opacity: 1;
-  color: rgba(91, 110, 128, var(--tw-text-opacity));
+  color: rgba(91, 110, 128, 1);
 }
 
 .navigationLinks a {
   text-decoration: none;
   --tw-text-opacity: 1;
-  color: rgba(0, 98, 255, var(--tw-text-opacity));
+  color: var(--custom-background-color);
   margin-bottom: 5px;
   font-size: 20px;
   opacity: 0.8;

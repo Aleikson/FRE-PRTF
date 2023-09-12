@@ -3,6 +3,54 @@
   flex-direction: column;
 }
 
-html{
+html {
   background: #fafafa;
+}
+
+:root {
+  --primary-color-text: rgba(0, 8, 61, 1);
+  --secondary-color-text: rgba(91, 110, 128, 1);
+  --custom-background-color: rgba(0, 98, 255, 1);
+}
+
+.primary-btn-global {
+  padding: 0.7rem 1.5rem 0.8rem 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  background-image: linear-gradient(90deg, #009bff, #0062ff);
+  box-shadow: 0 2px 8px 0 rgba(0, 34, 255, .08), 0 2px 8px 0 rgba(0, 11, 80, .12);
+  border-radius: 9999px;
+  position: relative;
+  letter-spacing: 0.025em;
+  color: white;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: inherit;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.primary-btn-global:hover {
+  background-image: linear-gradient(90deg, #0062ff, #009bff);
+  color: rgba(255, 255, 255, 1);
+}
+
+.secondary-btn-global {
+  padding-top: 0.7rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 9999px;
+  letter-spacing: 0.025em;
+  color: var(--custom-background-color);
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: inherit;
+  transition: color 0.3s;
+}
+
+
+.secondary-btn-global:hover {
+  color: rgb(0, 60, 156);
 }
