@@ -1,12 +1,9 @@
 .container {
-  height: 50vh;
-  width: 65%;
-  margin-right: auto;
-  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  text-align: center; 
+  height: 35vh;
 }
 
 .container p {
@@ -15,177 +12,89 @@
   line-height: 1.75rem;
   max-width: 48rem;
   text-align: center;
+  color: #ffffff;
 }
 
 .containerFlex {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  width: 100%;
   justify-content: space-around;
+  position: relative;
+  width: 150vh;
+  height: 150px;
+  top: 50%;
+  background: #4831d4;
+  border-radius: 15px;
 }
 
 .item {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  padding-right: 1.5rem;
-  width: 66.666667%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
 }
 
 .item h3 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   line-height: 2.5rem;
   color: var(--primary-color-text);
   font-weight: 900;
   margin: 0;
   margin-bottom: 0.75rem;
-
+  color: #ffffff;
 }
 
 .item p {
-  font-size: 1.5rem;
+  font-size: 18px;
   line-height: 2rem;
   color: var(--secondary-color-text);
   margin: 0;
-  margin-left: 10px;
+  margin-top: 10px;
+  color: #ffffff;
 }
 
-.linksContainer {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  width: 33.333333%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.contactItem {
-  color: var(--secondary-color-text);
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-decoration: inherit;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.contactItem:hover {
-  color: var(--custom-background-color);
-}
-
-.availabilityContainer {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.blinkingCircle {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--custom-background-color);
-  margin-left: 0;
-  box-shadow: 0 0 10px 0 rgba(0, 98, 255, 0.1);
-}
-
-@keyframes pulseShadowAnimation {
-
-  0%,
-  100% {
-    box-shadow: 0 0 10px 0 rgba(0, 98, 255, 0.1);
-  }
-
-  50% {
-    box-shadow: 0 0 20px 10px rgba(0, 98, 255, 0.5);
-  }
-}
-
-.blinkingCircle {
-  animation: pulseShadowAnimation 2s infinite;
+.btnGlobal {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #ffffff;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 480px) {
-  .container {
-    height: auto;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
 
   .containerFlex {
-    display: flex;
+    width: 80%;
+    height: 250px;
+    top: 40%;
+    padding: 20px;
     flex-direction: column;
-    width: 100%;
-  }
-
-  .title {
-    font-size: 18px;
-  }
-
-  .linksContainer {
-    width: 100%;
-  }
-
-  .linksContainer a {
-    text-align: center;
-    font-size: 1.125rem;
   }
 
   .item {
-    padding-right: 0;
-    align-items: center;
-    width: 85%;
-  }
-
-  .item h3 {
-    font-size: 1.5rem;
+    width: 100%;
     text-align: center;
-    ;
   }
-
-  .item p {
-    font-size: 1.125rem;
-  }
-
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .container {
     height: auto;
   }
-
-  .linksContainer {
-    width: 100px;
-    height: 100px;
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
   .container {
     width: 100%;
     padding: 0;
   }
-
-  .linksContainer {
-    width: 100%;
-  }
-
-  .containerFlex {
-    flex-direction: column;
-  }
-
-  .item {
-    width: 100%;
-  }
-
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-
   .container {
     height: auto;
   }

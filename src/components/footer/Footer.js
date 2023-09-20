@@ -1,58 +1,34 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
-import { BsLinkedin } from 'react-icons/bs';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { AiOutlineMail } from 'react-icons/ai';
+
+
 import Style from './Footer.module.css';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
   const authorName = 'Aleikson';
-
-  const handleSmoothScroll = (event, targetId) => {
-    event.preventDefault();
-    const targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-      const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
-
-      window.scrollTo({
-        top: offsetTop,
-        behavior: 'smooth',
-      });
-    }
-  };
 
   return (
     <div className={Style.footerContainer}>
-      <div className={Style.socialAndNavigationContainer}>
-        <nav className={Style.navigationLinks}>
-          <span className={Style.navigationTitle}>Navigation</span>
-          <a href="/" onClick={(e) => handleSmoothScroll(e, 'home')}>
-            Home
-          </a>
-          <a href="#case" onClick={(e) => handleSmoothScroll(e, 'case')}>
-            Case
-          </a>
-          <a href="#capabilities" onClick={(e) => handleSmoothScroll(e, 'capabilities')}>
-            Capabilities
-          </a>
-          <a href="#contact" onClick={(e) => handleSmoothScroll(e, 'contact')}>
-            Contact
-          </a>
-        </nav>
-        <div className={Style.contactContainer}>
+      <div className={Style.titleContainer}>
+        <span className={Style.title}>Embracing challenges and overcoming obstacles daily.</span>
+      </div>
+      <div className={Style.socialContainer}>
+        <div className={Style.socialContent}>
           <div className={Style.socialLinks}>
             <a href="https://github.com/Aleikson">
-              <FaGithub className={Style.contactIcon} />
-              <span className={Style.contactText}>github.com/Aleikson</span>
+              <FaGithub className={Style.contactIcon} size={25} />
             </a>
             <a href="https://www.linkedin.com/in/aleikson-frontend/">
-              <BsLinkedin className={Style.contactIcon} />
-              <span className={Style.contactText}>linkedin.com/in/aleikson</span>
+              <FaLinkedinIn className={Style.contactIcon} size={25} />
+            </a>
+            <a href="mailto:aleiksonsilva@hotmail.com" >
+              <AiOutlineMail className={Style.contactIcon} size={25} />
             </a>
           </div>
         </div>
       </div>
-      <p className={Style.footerText}>&copy; {currentYear} {authorName} - All rights reserved</p>
+      <p className={Style.footerText}> Handcrafted by me &copy; {authorName} - All rights reserved</p>
     </div>
   );
 };

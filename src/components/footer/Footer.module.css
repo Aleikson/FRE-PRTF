@@ -1,96 +1,68 @@
 .footerContainer {
-  padding: 30px;
-  display: flex;
-  width: 65%;
-  margin-right: auto;
-  margin-left: auto;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contactContainer {
+  height: 65vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  background: #141c3a;
+  text-align: center;
 }
 
-.contactTitle {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.contactText {
-  font-size: 20px;
-  margin-left: 5px;
-}
-
-.contactText:hover {
-  color: var(--custom-background-color);
-}
-
-.socialAndNavigationContainer {
+.titleContainer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10%;
+  color: #ffffff;
+}
+
+.socialContainer {
+  display: flex;
+  flex-direction: column; 
   align-items: center;
   width: 75%;
   margin-bottom: 20px;
 }
 
-.socialLinks {
+.socialContent {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.socialTitle {
-  font-size: 20px;
-  font-size: 16px;
-  margin-right: 20px;
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .socialLinks a {
-  font-size: 20px;
-  text-decoration: none;
-  margin-bottom: 5px;
-   color: rgba(91, 110, 128, 1);
-}
-
-.navigationLinks {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-}
-
-.navigationTitle {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: rgba(91, 110, 128, 1);
-}
-
-.navigationLinks a {
-  text-decoration: none;
-  --tw-text-opacity: 1;
-  color: var(--custom-background-color);
-  margin-bottom: 5px;
-  font-size: 20px;
-  opacity: 0.8;
-  transition: color 0.3s ease;
-}
-
-.navigationLinks a:hover {
-  color: #42a5f5;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 100%;
+  margin: 0 0.2rem;
+  height: 47px;
+  width: 47px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  align-items: center;
+  justify-content: center;
 }
 
 .footerText {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 1rem;
   opacity: 0.8;
+  color: #ffffff;
 }
 
 @media (max-width: 635px) {
-
   .footerContainer {
     padding: 20px;
   }
@@ -103,7 +75,7 @@
   .socialLinks,
   .navigationLinks {
     align-items: center;
-    text-align: center;
+    text-align: center; 
   }
 
   .footerText {
