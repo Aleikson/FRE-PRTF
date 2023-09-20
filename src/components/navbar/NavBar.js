@@ -3,9 +3,11 @@ import style from './NavBar.module.css';
 
 const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [areLinksVisible, setLinksVisibility] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
+    setLinksVisibility(!areLinksVisible);
   };
 
   const handleSmoothScroll = (event, targetId) => {
@@ -20,25 +22,25 @@ const NavBar = () => {
 
   return (
     <div className={style.container}>
-      <a href="/" className={style.nameLink}>
-        <h1>Aleikson Silva</h1>
-        <span>&#124; front-end developer</span>
-      </a>
-      <div className={`${style.links} ${isMenuOpen ? style.open : style.closed}`}>
-        <a href="#case" onClick={(e) => handleSmoothScroll(e, 'case')}>Case Studies</a>
-        <a href="#capabilities" onClick={(e) => handleSmoothScroll(e, 'capabilities')}>Capabilities</a>
-        <a
-          style={{ '--tw-text-opacity': 1, color: 'rgba(0, 98, 255, var(--tw-text-opacity))' }}
-          href="#contact"
-          onClick={(e) => handleSmoothScroll(e, 'contact')}
-        >
-          Contact
-        </a>
-      </div>
-      <div className={style.menuIcon} onClick={toggleMenu}>
-        <span className={`${style.iconBar} ${isMenuOpen ? style.open : ''}`} />
-        <span className={`${style.iconBar} ${isMenuOpen ? style.open : ''}`} />
-        <span className={`${style.iconBar} ${isMenuOpen ? style.open : ''}`} />
+      <div className={style.content}>
+        <div className={style.menuIcon} onClick={toggleMenu}>
+          <span className={`${style.iconBar} ${isMenuOpen ? style.open : ''}`} />
+          <span className={`${style.iconBar} ${isMenuOpen ? style.open : ''}`} />
+        </div>
+        <div className={`${style.links} ${isMenuOpen ? style.open : style.closed}`}>
+          {areLinksVisible && (
+            <>
+              <a
+                href="#studies"
+                onClick={(e) => handleSmoothScroll(e, 'case')}>My Work</a>
+              <div>
+                <a
+                  href="#contact"
+                  onClick={(e) => handleSmoothScroll(e, 'contact')}>Contact Me</a>
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
