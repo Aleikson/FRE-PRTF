@@ -1,23 +1,11 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  background: #252934;
+  justify-content: flex-end;
   align-items: center;
+  height: 10vh;
   box-sizing: border-box;
-}
-
-.container p {
-  --tw-text-opacity: 1;
-  color: rgba(91, 110, 128, var(--tw-text-opacity));
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  max-width: 48rem;
-  text-align: center;
-}
-
-.title {
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .containerGrid {
@@ -39,93 +27,41 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 90px;
-  height: 90px;
+  width: 65px;
+  height: 65px;
   flex-direction: column;
 }
 
 .iconContainer svg {
   height: 100%;
   width: 50%;
+  color: #ececec;
   opacity: 0.75;
 }
 
-
-
-.technologyContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-.technologyItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.icon {
-  width: 100%;
-  height: 100%;
-}
-
 @media only screen and (max-width: 320px) {
-
   .containerGrid {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-}
-
-
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  .container {
-    height: auto;
-    width: 90%;
-  }
-
-  .containerGrid {
-    grid-template-columns: repeat(5, 1fr);
     grid-gap: 8px;
   }
-
-  .title {
-    font-size: 18px;
-  }
-
   .iconContainer {
     width: 70px;
     height: 70px;
   }
+}
 
-  .name {
-    font-size: 10px;
-  }
+@media only screen and (min-width: 321px) and (max-width: 480px) {
 
-  .icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .technologyContainer {
-    padding: 0px;
-    display: grid;
+  .containerGrid {
     grid-template-columns: repeat(4, 1fr);
-    gap: 1%;
   }
-
-  .technologyItem {
-    margin-right: 0;
+  .iconContainer {
+    width: 85px;
+    height: 50px;
   }
-
-  .load {
-    width: 60px;
-    height: 60px;
-    position: relative;
+  .iconContainer svg {
+    height: 50%;
+    width: 30%;
   }
 }
 
@@ -133,106 +69,48 @@
   .container {
     height: auto;
   }
-
   .containerGrid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
-
   .iconContainer {
-    width: 100px;
-    height: 100px;
-  }
-
-  .name {
-    font-size: 12px;
-  }
-
-  .load {
-    width: 70px;
-    height: 70px;
-    position: relative;
-    top: 0;
-  }
-
-  .technologyContainer {
-    gap: 10px;
+    width: 85px;
+    height: 50px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
   .container {
     height: auto;
     width: 90%;
   }
-
   .containerGrid {
     grid-template-columns: repeat(4, 1fr);
   }
-
-  .iconContainer {
-    width: 130px;
-    height: 130px;
-  }
-
-  .name {
-    font-size: 14px;
-  }
-
-  .load {
-    width: 90px;
-    height: 90px;
-    position: relative;
-    top: 0;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-
-  .container {
-    height: auto;
-  }
-
-  .containerGrid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
   .iconContainer {
     width: 150px;
     height: 150px;
   }
+}
 
-  .name {
-    font-size: 16px;
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    height: auto;
   }
-
-  .load {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    top: 0;
+  .containerGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .iconContainer {
+    width: 150px;
+    height: 150px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
-
   .containerGrid {
     grid-template-columns: repeat(5, 1fr);
   }
-
   .iconContainer {
     width: 130px;
     height: 130px;
-  }
-
-  .name {
-    font-size: 16px;
-  }
-
-  .load {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    top: 0;
   }
 }

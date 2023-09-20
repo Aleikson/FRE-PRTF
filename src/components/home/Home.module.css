@@ -1,103 +1,81 @@
 .home {
   display: flex;
-  height: 100vh;
-  width: 65%;
-  margin-right: auto;
-  margin-left: auto;
-  flex-direction: column;
+  height: 90vh;
+  margin: 0 auto;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  background: #252934;
 }
 
 .content {
-  margin-bottom: 2rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .title {
-  font-family: -apple-system-headline, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-style: normal;
-  font-size: 2.75rem;
-  line-height: 1;
-  color: var(--primary-color-text)
-}
-
-.title h1 {
+  font-size: 1.5rem;
+  color: #ececec;
   margin: 0;
 }
 
-.description {
-  color: var(--secondary-color-text);
-  font-family: -apple-system-body, sans-serif;
-  margin: 0;
-  font-size: 1.3rem;
+.title span {
+  color: #4831d4;
 }
 
-.btnContainer {
-  display: flex;
-  align-content: center;
+.listContainer a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #ececec;
+  text-align: center;
+  color: #ececec;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 320px) {
-
   .home {
-    height: auto;
+  
+    padding: 20px;
   }
 
+  .content {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 321px) and (max-width: 480px) {
 
-  .home {
-    height: auto;
-  }
 
-  .home h1 {
-    font-size: 2.5rem;
-    line-height: 45px;
-    letter-spacing: 0px;
+  .title {
+    font-size: 1rem;
   }
 
   .content {
     width: 90%;
     padding: 10px;
-    align-items: center;
-    text-align: center;
   }
-
-  .description {
-    justify-content: center;
-    margin-left: 0;
-  }
-
-  .description p {
-    text-align: center;
-    font-size: 1.125rem;
-  }
-
-  .title {
-    justify-content: center;
-  }
-
 }
 
 @media only screen and (min-width: 481px) and (max-width: 766px) {
-
   .home {
-    height: auto;
+ 
     width: 90%;
   }
 
   .content {
     width: 90%;
   }
-
 }
 
-@media only screen and (min-width: 926px) and (max-width: 1114px) {
-
-  .home {
-    height: auto;
-  }
-
-}
