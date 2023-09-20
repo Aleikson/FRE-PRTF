@@ -1,62 +1,116 @@
 .container {
-  height: 75vh;
-  width: 65%;
-  margin-right: auto;
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.firstTitle {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.textContainer h1 {
   color: var(--primary-color-text);
 }
 
-.firstDescription {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.textContainer p {
   color: var(--secondary-color-text);
-  max-width: 70%;
-  text-align: center;
-  margin: 0 auto;
 }
 
-.tiles {
-  display: flex;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 50%;
   justify-content: center;
 }
 
 .tile {
-  margin: 15px;
-  cursor: pointer;
+  position: relative;
+  display: flex;
   overflow: hidden;
-  width: 20vw;
-  height: 20vw;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 270px;
+  align-items: center;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
 }
 
 .tile img {
   width: 100%;
-  transition: transform 500ms ease;
 }
 
-.tile img:hover {
-  transform: scale(1.1);
+.tile:hover {
+  background-color: #f0f0f0;
 }
 
-@media only screen and (min-width: 320px) {
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #252934;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.tile:hover .overlay {
+  opacity: 1;
+}
+
+.overlayDescription {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.overlayButton {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #6e07f3;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.overlayButton:hover {
+  background: #6e07f3;
+}
+
+.projectDescription {
+  display: none;
+}
+
+.tile:hover .projectDescription {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 480px) {
   .container {
     height: auto;
   }
 
-  .tile{
-    width: 50vw;
-    height: 50vw;
+  .grid {
+    grid-template-columns: 1fr; 
+    width: 80%;
   }
 
-  .tiles{
+  .tile {
+    width: 100%;
+    height: auto; 
+  }
+
+  .tiles {
     flex-direction: column;
     align-items: center;
   }
-
 }
