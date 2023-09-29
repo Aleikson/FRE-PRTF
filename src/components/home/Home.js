@@ -1,8 +1,17 @@
 import React from 'react';
 import Style from './Home.module.css';
 
-
 const Home = () => {
+  const handleSmoothScroll = (event, targetId) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <div id='home' className={Style.home}>
       <div className={Style.content}>
@@ -11,10 +20,15 @@ const Home = () => {
           <h1>Frontend Developer & UI designer</h1>
         </div>
         <div className={Style.listContainer}>
-          <a href='#studies'>View My Work</a>
+          <a
+            href='#studies'
+            onClick={(e) => handleSmoothScroll(e, 'studies')}
+          >
+            View My Work
+          </a>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 
