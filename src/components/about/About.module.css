@@ -39,6 +39,11 @@
     margin-bottom: 20px;
 }
 
+.development-tech,
+.design-tech {
+    color: var(--primary-color-text);
+}
+
 @media screen and (max-width: 767px) {
     .about {
         height: auto;
