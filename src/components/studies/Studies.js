@@ -3,8 +3,10 @@ import Style from './Studies.module.css';
 import project1 from '../../assets/1.png';
 import project2 from '../../assets/2.png';
 import project3 from '../../assets/3.png';
+import project4 from '../../assets/4.png'
 import coming from '../../assets/soon.png';
 import project3full from '../../assets/fullProject3.png'
+import project4Full from '../../assets/fullProject4.png'
 
 const data = [
   {
@@ -27,9 +29,9 @@ const data = [
   },
   {
     id: 4,
-    image: coming,
-    link: '',
-    description: '',
+    image: project4,
+    link: project4Full,
+    description: 'Mordern design for your hamburguer restaurant',
   },
   {
     id: 5,
