@@ -30,10 +30,10 @@ const NavBar = () => {
         <div className={`${style.links} ${isMenuOpen ? style.open : style.closed}`}>
           {areLinksVisible && (
             <>
-              <a
+              <a style={{ color: '#ececec' }}
                 href="#studies"
                 onClick={(e) => handleSmoothScroll(e, 'case')}>My Work</a>
-              <div>
+              <div className={style.contact}>
                 <a
                   href="#contact"
                   onClick={(e) => handleSmoothScroll(e, 'contact')}>Contact Me</a>
