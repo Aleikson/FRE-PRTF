@@ -1,84 +1,185 @@
-.footerContainer {
-  height: 65vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #141c3a;
+.footerDistributed {
+  background: #252934;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  font: bold 16px sans-serif;
+  text-align: left;
+  padding: 50px 60px 40px;
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
   text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
-.titleContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.footerLeft {
+  float: left;
 }
 
-.title {
-  font-size: 1.5rem;
-  margin-bottom: 10%;
+.footerLeft h3 {
   color: #ffffff;
+  font: normal 36px "Roboto", cursive;
+  margin: 0 0 10px;
 }
 
-.socialContainer {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  width: 75%;
-  margin-bottom: 20px;
+.footerLeft h3 span {
+  color: #4831d4;
 }
 
-.socialContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.socialLinks {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.socialLinks a {
-  display: flex;
-  background-color: transparent;
+.footerLeft .footerLinks {
   color: #ffffff;
-  border-radius: 100%;
-  margin: 0 0.2rem;
-  height: 47px;
-  width: 47px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  align-items: center;
-  justify-content: center;
+  margin: 0 0 10px;
+  padding: 0;
 }
 
-.footerText {
+.footerLeft .footerLinks a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footerLeft .footerCompanyName {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footerLeft .footerIcons {
   margin-top: 20px;
-  font-size: 1rem;
-  opacity: 0.8;
+}
+
+.footerLeft .footerIcons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 10px;
+}
+
+.footerRight {
+  float: right;
+}
+
+.footerRight p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px 42px 0 0;
   color: #ffffff;
 }
 
-@media (max-width: 635px) {
-  .footerContainer {
-    padding: 20px;
+.footerForm {
+  display: inline-block;
+}
+
+.footerForm input,
+.footerForm textarea {
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color: #d1d2d2;
+  width: 400px;
+  padding: 18px;
+}
+
+.footerForm input {
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.footerForm textarea {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.footerForm button {
+  border-radius: 3px;
+  background-color: #33383b;
+  color: #ffffff;
+  border: 0;
+  padding: 15px 50px;
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
+}
+
+.successMessage {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+@media (max-width: 1000px) {
+  .footerDistributed {
+    font: bold 14px sans-serif;
   }
 
-  .socialAndNavigationContainer {
-    flex-direction: column;
-    align-items: center;
+  .footerLeft .footerCompanyName {
+    font-size: 12px;
   }
 
-  .socialLinks,
-  .navigationLinks {
-    align-items: center;
-    text-align: center; 
+  .footerForm input,
+  .footerForm textarea {
+    width: 250px;
   }
 
-  .footerText {
-    font-size: 10px;
+  .footerForm button {
+    padding: 10px 35px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footerDistributed {
+    padding: 30px;
+  }
+
+  .footerLeft,
+  .footerRight {
+    float: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footerLeft {
+    margin-bottom: 40px;
+  }
+
+  .footerForm {
+    margin-top: 30px;
+  }
+
+  .footerForm {
+    display: block;
+  }
+
+  .footerForm button {
+    float: none;
   }
 }
