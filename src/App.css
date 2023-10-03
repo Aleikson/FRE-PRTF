@@ -3,12 +3,8 @@
   flex-direction: column;
 }
 
-body {
-  overflow-y: hidden;
-}
-
-html {
-  background: #fafafa;
+* {
+  font-family: "Satoshi Light", serif;
 }
 
 :root {
