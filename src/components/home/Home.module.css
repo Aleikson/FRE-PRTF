@@ -17,7 +17,6 @@
 }
 
 .title {
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   color: #ececec;
@@ -42,7 +41,6 @@
 
 @media only screen and (max-width: 320px) {
   .home {
-  
     padding: 20px;
   }
 
@@ -57,7 +55,6 @@
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
 
-
   .title {
     font-size: 1rem;
   }
@@ -69,13 +66,8 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 766px) {
-  .home {
- 
-    width: 90%;
-  }
 
   .content {
     width: 90%;
   }
 }
-
