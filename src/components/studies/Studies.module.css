@@ -1,14 +1,15 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  height: 100vh;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  background: #f2f2f2;
 }
 
 .textContainer h1 {
   color: var(--primary-color-text);
+  margin: 0;
 }
 
 .textContainer p {
@@ -17,9 +18,10 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-  width: 50%;
+  width: 60%;
+  height: 80vh;
   justify-content: center;
 }
 
@@ -27,10 +29,9 @@
   position: relative;
   display: flex;
   overflow: hidden;
-  height: 270px;
   align-items: center;
   border-radius: 10px;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
 }
 
 .tile img {
@@ -39,6 +40,7 @@
 
 .tile:hover {
   background-color: #f0f0f0;
+  opacity: 7;
 }
 
 .overlay {
@@ -47,7 +49,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #252934;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
   opacity: 0;
   transition: opacity 1.5s ease;
   display: flex;
@@ -57,7 +60,7 @@
 }
 
 .tile:hover .overlay {
-  opacity: 1;
+  opacity: 7;
 }
 
 .overlayDescription {
@@ -93,19 +96,22 @@
   font-size: 14px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 834px) {
+
   .container {
     height: auto;
   }
 
   .grid {
-    grid-template-columns: 1fr; 
-    width: 80%;
+    grid-template-columns: 1fr;
+    width: 90%;
+    height: 100%;
+    justify-items: center;
   }
 
   .tile {
     width: 100%;
-    height: auto; 
+    height: auto;
   }
 
   .tiles {
