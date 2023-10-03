@@ -3,11 +3,9 @@ import style from './NavBar.module.css';
 
 const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [areLinksVisible, setLinksVisibility] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
-    setLinksVisibility(!areLinksVisible);
   };
 
   const handleSmoothScroll = (event, targetId) => {
@@ -23,23 +21,33 @@ const NavBar = () => {
   return (
     <div className={style.container}>
       <div className={style.content}>
-        <div className={style.menuIcon} onClick={toggleMenu}>
-          <span className={`${style.iconBar} ${isMenuOpen ? style.open : ''}`} />
-          <span className={`${style.iconBar} ${isMenuOpen ? style.open : ''}`} />
+        <div className={`${style.links} ${isMenuOpen ? style.open : ''}`}>
+          <a
+            style={{ color: '#ececec' }}
+            href="#about"
+            onClick={(e) => handleSmoothScroll(e, 'about')}
+          >
+            About
+          </a>
+          <a
+            style={{ color: '#ececec' }}
+            href="#studies"
+            onClick={(e) => handleSmoothScroll(e, 'studies')}
+          >
+            My Work
+          </a>
+          <div className={style.contact}>
+            <a
+              href="#contact"
+              onClick={(e) => handleSmoothScroll(e, 'contact')}
+            >
+              Contact Me
+            </a>
+          </div>
         </div>
-        <div className={`${style.links} ${isMenuOpen ? style.open : style.closed}`}>
-          {areLinksVisible && (
-            <>
-              <a style={{ color: '#ececec' }}
-                href="#studies"
-                onClick={(e) => handleSmoothScroll(e, 'case')}>My Work</a>
-              <div className={style.contact}>
-                <a
-                  href="#contact"
-                  onClick={(e) => handleSmoothScroll(e, 'contact')}>Contact Me</a>
-              </div>
-            </>
-          )}
+        <div className={style.menuIcon} onClick={toggleMenu}>
+          <span className={style.iconBar} />
+          <span className={style.iconBar} />
         </div>
       </div>
     </div>
