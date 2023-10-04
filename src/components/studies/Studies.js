@@ -53,7 +53,7 @@ const Studies = () => {
   };
 
   return (
-    <div className={Style.container}>
+    <div id='studies' className={Style.container}>
       <div className={Style.textContainer} style={{ textAlign: 'center', margin: '20px' }}>
         <h1>My Recent Work</h1>
         <p>Here are a few past design projects I've worked on.</p>

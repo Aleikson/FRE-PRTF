@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: #252934;
+  background: var( --dark-color);
 }
 
 .content {
@@ -19,12 +19,12 @@
 .title {
   font-weight: 700;
   font-size: 1.5rem;
-  color: #ececec;
+  color: var(--light-color);
   margin: 0;
 }
 
 .title span {
-  color: #4831d4;
+  color: var(--primary-color-text);
 }
 
 .listContainer a {
@@ -32,7 +32,7 @@
   padding: 10px 20px;
   border: 2px solid #ececec;
   text-align: center;
-  color: #ececec;
+  color: var(--light-color);
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;

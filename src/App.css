@@ -8,48 +8,20 @@
 }
 
 :root {
-  --primary-color-text: #4831d4;
+  --primary-color-text: #e8630a;
   --secondary-color-text: #3d155f;
+  --dark-color: #1D1E1F;
+  --light-color: #dac5a7;
 }
 
 .primary-btn-global {
   display: inline-block;
   padding: 10px 20px;
-  border: 2px solid #252934;
+  border: 2px solid var(--light-color);
   text-align: center;
-  color: #252934;
+  color: var(--light-color);
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
   margin-top: 20px;
-}
-
-.dot-indicators {
-  position: fixed;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  z-index: 999;
-  list-style-type: none;
-  padding: 0;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  background-color: #4831d4;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.dot:hover {
-  background-color: #0056b3;
-}
-
-@media (max-width: 768px) {
-  body {
-    overflow-y: auto;
-  }
 }

@@ -4,19 +4,19 @@
   justify-content: center;
   text-align: center;
   min-height: 90vh;
-  background: #4831d4;
+  background: var( --dark-color);
   flex-direction: column;
 }
 
 .container h3 {
   font-size: 6rem;
   line-height: 1.1;
-  color: #ffffff;
+  color: var(--light-color);
   margin: 0;
 }
 
 .container p {
-  color: #ffffff;
+  color: var(--light-color);
   font-size: 1.125rem;
   text-align: center;
 }
@@ -42,7 +42,7 @@
   padding: 10px 20px;
   border: 2px solid #ffffff;
   text-align: center;
-  color: #ffffff;
+   color: var(--light-color);
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
@@ -50,8 +50,8 @@
 }
 
 .ribbon {
-  background-color: #4831d4;
-  color: #ffffff;
+  background-color: var(--primary-color-text);
+   color: var(--light-color);
   text-align: center;
   padding: 10px 0;
   position: relative;
@@ -69,6 +69,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -80,6 +81,10 @@
     padding: 20px;
   }
 
+  .container h3 {
+    font-size: 4rem;
+  }
+
   .content {
     width: 90%;
   }
@@ -88,7 +93,7 @@
     margin-top: 10px;
   }
 
-  .ribbonText {
-    display: none; /* Desativa o scrollText em telas menores */
+  .ribbon {
+    display: none;
   }
 }

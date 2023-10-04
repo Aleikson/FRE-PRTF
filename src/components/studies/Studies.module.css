@@ -4,16 +4,16 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background: #f2f2f2;
+  background: var( --dark-color);
 }
 
 .textContainer h1 {
-  color: var(--primary-color-text);
+  color: var(--light-color);
   margin: 0;
 }
 
 .textContainer p {
-  color: var(--secondary-color-text);
+  color: var(--light-color);
 }
 
 .grid {
@@ -73,7 +73,7 @@
 .overlayButton {
   display: inline-block;
   padding: 10px 20px;
-  border: 2px solid #6e07f3;
+  border: 2px solid var(--primary-color-text);
   text-align: center;
   color: #ffffff;
   text-decoration: none;
@@ -82,7 +82,7 @@
 }
 
 .overlayButton:hover {
-  background: #6e07f3;
+  background: var(--primary-color-text);
 }
 
 .projectDescription {
@@ -91,7 +91,7 @@
 
 .tile:hover .projectDescription {
   display: block;
-  margin-top: 10px;
+
   color: #333;
   font-size: 14px;
 }
@@ -107,6 +107,7 @@
     width: 90%;
     height: 100%;
     justify-items: center;
+    margin-bottom: 10%;
   }
 
   .tile {
